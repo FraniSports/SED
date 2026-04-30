@@ -1,0 +1,44 @@
+/* Carrusel - Unifomizar tamaño de imágenes */
+
+.carousel {
+	width: 100%;
+	overflow-x: auto;
+}
+
+.carousel .reel {
+	display: flex;
+	gap: 20px;
+	overflow-x: auto;
+	padding: 20px 0;
+}
+
+.carousel article {
+	flex-shrink: 0;
+	width: 250px; /* Ajusta este valor según desees */
+}
+
+.carousel article .image {
+	width: 100%;
+	height: 200px; /* Altura fija para las imágenes */
+	overflow: hidden;
+	display: block;
+}
+
+.carousel article .image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Esto mantiene la proporción y rellena el espacio */
+	display: block;
+}
+
+.carousel article header {
+	padding: 15px 0;
+}
+
+.carousel article h3 {
+	margin: 0;
+}
+
+.carousel article p {
+	margin-top: 10px;
+}
